@@ -1,11 +1,12 @@
+import Banner from "@/components/Banner/Banner";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="px-16 py-3 font-[family-name:var(--font-geist-sans)]">
+    <div className="font-[family-name:var(--font-geist-sans)]">
       <Navbar></Navbar>
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        
+      <main className="">
+        <Banner></Banner>
         
 
         
