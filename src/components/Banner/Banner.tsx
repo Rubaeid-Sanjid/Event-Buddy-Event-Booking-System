@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
@@ -73,7 +75,7 @@ const Banner = () => {
             <input
               type="text"
               placeholder="Search events"
-              className="px-14  py-4 bg-[#dcdefe] rounded-lg"
+              className="px-14  py-4 bg-[#dcdefe] rounded-lg border-[#BDBBFB] border"
             />
             <button className="px-9 py-4 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-[#5A78FF] hover:to-[#A4B5FF]">
               Search Events

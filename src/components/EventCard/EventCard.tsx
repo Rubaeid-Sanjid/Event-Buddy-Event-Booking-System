@@ -18,7 +18,7 @@ interface Seating {
   totalSeats: number;
 }
 
-interface Event {
+export interface Event {
   id: number;
   imageUrl: string;
   date: EventDate;
@@ -32,11 +32,11 @@ interface Event {
   seating: Seating;
 }
 
-interface EventCardProps {
+export interface EventCardProps {
   event: Event;
 }
 
-const EventCard = ({ event }: EventCardProps) => {
+const EventCard = ({event} : EventCardProps ) => {
   return (
     <div className="max-w-sm bg-white flex flex-col text-gray-900 cut-corners">
       <Image

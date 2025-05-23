@@ -8,7 +8,7 @@
 .cut-corners::before{
   content: '';
   position: absolute;
-  background: white; 
+  background: #fafaff;  
   width: 20px;
   height: 20px;
   z-index: 10;

@@ -1,61 +1,20 @@
-import React from 'react';
-import EventCard from '../EventCard/EventCard';
+import React from "react";
+import EventCard from "../EventCard/EventCard";
+import events from "../../../public/event.json";
 
 const UpcomingEventSection = () => {
-    return (
-        <div className='bg-[#fafaff]'>
-            <EventCard
-  event={{
-    id: 5,
-    imageUrl: "/conference-audience.jpg",
-    date: {
-      iso: "2025-04-14",
-      display: {
-        month: "APR",
-        day: 14,
-      },
-      dayOfWeek: "Sunday",
-    },
-    title: "Tech Conference 2025",
-    description: "We’ll get you directly seated and inside for you to enjoy the conference.",
-    schedule: {
-      timeRange: "3–5 PM",
-    },
-    location: "San Francisco, CA",
-    tags: ["Tech", "Conference", "AI"],
-    seating: {
-      spotsLeft: 20,
-      totalSeats: 100,
-    },
-  }}
-/>
-            <EventCard
-  event={{
-    id: 5,
-    imageUrl: "/conference-audience.jpg",
-    date: {
-      iso: "2025-04-14",
-      display: {
-        month: "APR",
-        day: 14,
-      },
-      dayOfWeek: "Sunday",
-    },
-    title: "Tech Conference 2025",
-    description: "We’ll get you directly seated and inside for you to enjoy the conference.",
-    schedule: {
-      timeRange: "3–5 PM",
-    },
-    location: "San Francisco, CA",
-    tags: ["Tech", "Conference", "AI"],
-    seating: {
-      spotsLeft: 20,
-      totalSeats: 100,
-    },
-  }}
-/>
-        </div>
-    );
+  return (
+    <div className="bg-[#fafaff] lg:px-12 px-6 my-14">
+      <h2 className="text-4xl font-medium text-[#242565] mb-8">
+        Upcoming Events
+      </h2>
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
+        {events.map(({ event }, idx) => (
+          <EventCard event={event} key={idx}></EventCard>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default UpcomingEventSection;
