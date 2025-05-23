@@ -1,0 +1,36 @@
+
+.cut-corners {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.cut-corners::before{
+  content: '';
+  position: absolute;
+  background: white; 
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.cut-corners::after {
+  content: '';
+  position: absolute;
+  background: #fafaff; 
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.cut-corners::before {
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.cut-corners::after {
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}

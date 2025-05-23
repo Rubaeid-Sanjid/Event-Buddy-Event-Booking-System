@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner/Banner";
 import Navbar from "@/components/Navbar";
+import UpcomingEventSection from "@/components/UpcomingEventSection/UpcomingEventSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar></Navbar>
       <main className="">
         <Banner></Banner>
+        <UpcomingEventSection></UpcomingEventSection>
         
 
         
