@@ -1,6 +1,7 @@
 import React from "react";
 import EventCard from "../EventCard/EventCard";
 import events from "../../../public/event.json";
+import Link from "next/link";
 
 const UpcomingEventSection = () => {
   return (
@@ -10,7 +11,10 @@ const UpcomingEventSection = () => {
       </h2>
       <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
         {events.map(({ event }, idx) => (
-          <EventCard event={event} key={idx}></EventCard>
+          <Link key={idx} href={`/EventDetails/${event.id}`}>
+          
+          <EventCard event={event}></EventCard>
+          </Link>
         ))}
       </div>
     </div>
