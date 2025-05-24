@@ -1,4 +1,7 @@
+'use client';
+
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -11,12 +14,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-4">
-          <button className="size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF]">
+          <Link href={'/SignIn'}><button className="cursor-pointer size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
             Sign in
-          </button>
-          <button className="size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF]">
+          </button></Link>
+          <Link href={'/SignUp'}>
+          <button className="cursor-pointer size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
             Sign up
           </button>
+          </Link>
         </div>
       </div>
     </nav>
