@@ -7,8 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const users = [
-  { name: "Rafi", email: "user@gmail.com", role: "user" },
-  { name: "Sanjid", email: "admin@gmail.com", role: "admin" },
+  { name: "Rafi", email: "user@gmail.com", password: "1234", role: "user" },
+  { name: "Sanjid", email: "admin@gmail.com", password: "1234", role: "admin" },
 ];
 
 export default function SignUp() {
@@ -20,15 +20,18 @@ export default function SignUp() {
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const user = users.find((u) => u.email === email);
-    const role = user ? (user.role as "user" | "admin") : "user";
-
-    login(role);
-
-    router.push("/dashboard");
-  };
+      e.preventDefault();
+      
+      const user = users.find((u) => u.email === email);
+      const role = user ? (user.role as "user" | "admin") : "user";
+      login(role);
+  
+      if (role === "admin") {
+          router.push("/AdminDashboard");
+      } else {
+          router.push("/Dashboard");
+      }
+    };
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ECEEFF]">
