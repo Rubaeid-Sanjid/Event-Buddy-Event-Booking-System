@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner/Banner";
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar";
 import UpcomingEventSection from "@/components/UpcomingEventSection/UpcomingEventSection";
 
@@ -13,9 +14,7 @@ export default function Home() {
 
         
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }

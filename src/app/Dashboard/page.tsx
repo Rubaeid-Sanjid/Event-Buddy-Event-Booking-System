@@ -1,15 +1,17 @@
 'use client';
 
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar";
 import RegisterEventCard from "@/components/RegisterEventCard/RegisterEventCard";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="text-[#242565]">
+    <div>
       <Navbar></Navbar>
-      <div className="my-8">
-        <h2 className="md:text-4xl text-3xl  font-medium mb-4">Dashboard</h2>
+      <div className="text-[#242565] px-16">
+        <div className="my-8">
+        <h2 className="md:text-4xl text-3xl font-medium mb-3">Dashboard</h2>
         <p className="text-xl text-[#8570AD]">
           Welcome back, Alif! Here you can manage your event registrations.
         </p>
@@ -30,6 +32,8 @@ const page = () => {
           }}
         />
       </div>
+      </div>
+      <Footer></Footer>
     </div>
   );
 };
