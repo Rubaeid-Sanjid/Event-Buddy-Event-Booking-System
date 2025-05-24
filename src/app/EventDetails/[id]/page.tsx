@@ -1,4 +1,5 @@
 import React from 'react';
+import events from "../../../../public/event.json";
 
 interface PageProps {
   params: {
@@ -8,7 +9,11 @@ interface PageProps {
 
 const page = ({params}: PageProps) => {
     
-    console.log(params.id);
+  console.log(events);
+    const event = events.find(({event}) => event.id === params.id);
+    console.log(event);
+
+
     return (
         <div>
             <h3>Event Details</h3>
