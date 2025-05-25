@@ -1,18 +1,23 @@
+// context/AuthContext.tsx
 "use client";
-
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
-type Role = "guest" | "user" | "admin";
+export interface User {
+  name: string;
+  email: string;
+  password?: string;
+  role: "guest" | "user" | "admin";
+}
 
 interface AuthContextType {
-  role: Role;
+  user: User | null;
   isAuthenticated: boolean;
-  login: (role: Role) => void;
+  login: (user: User) => void;
   logout: () => void;
 }
 
 const AuthContext = createContext<AuthContextType>({
-  role: "guest",
+  user: null,
   isAuthenticated: false,
   login: () => {},
   logout: () => {},
@@ -21,14 +26,19 @@ const AuthContext = createContext<AuthContextType>({
 export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [role, setRole] = useState<Role>("guest");
+  const [user, setUser] = useState<User | null>(null);
 
-  const login = (newRole: Role) => setRole(newRole);
-  const logout = () => setRole("guest");
+  const login = (u: User) => setUser(u);
+  const logout = () => setUser(null);
 
   return (
     <AuthContext.Provider
-      value={{ role, isAuthenticated: role !== "guest", login, logout }}
+      value={{
+        user,
+        isAuthenticated: user !== null,
+        login,
+        logout,
+      }}
     >
       {children}
     </AuthContext.Provider>

@@ -32,7 +32,7 @@ const SelectSeatSection = () => {
         ))}
       </div>
 
-      <button className="block mx-auto text-[15px] font-semibold cursor-pointer size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
+      <button className="block mx-auto text-[15px] font-semibold cursor-pointer px-4 py-2 text-white rounded-md bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
         Book 1 Seat
       </button>
     </div>

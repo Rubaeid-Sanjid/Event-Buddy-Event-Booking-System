@@ -26,7 +26,7 @@ const page = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="text-[#242565] px-16">
+      <div className="text-[#242565] px-16 mb-24">
         <div className="my-8">
           <h2 className="md:text-4xl text-3xl font-medium mb-3">
             Admin Dashboard
