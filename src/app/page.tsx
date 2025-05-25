@@ -1,7 +1,7 @@
 import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar";
-import UpcomingEventSection from "@/components/UpcomingEventSection/UpcomingEventSection";
+import EventSection from "@/components/EventSection/EventSection";
 
 export default function Home() {
   return (
@@ -9,9 +9,8 @@ export default function Home() {
       <Navbar></Navbar>
       <main className="">
         <Banner></Banner>
-        <UpcomingEventSection></UpcomingEventSection>
-        
-
+        <EventSection eventStatus={"Upcoming"}></EventSection>
+        <EventSection eventStatus={"Previous"}></EventSection>
         
       </main>
       <Footer></Footer>
