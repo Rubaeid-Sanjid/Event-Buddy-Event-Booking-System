@@ -70,12 +70,12 @@ const Banner = () => {
               alt="search icon"
               width={24}
               height={24}
-              className="absolute left-[27%] top-4"
+              className="absolute left-[27%] top-4 pointer-events-none"
             ></Image>
             <input
               type="text"
               placeholder="Search events"
-              className="px-14  py-4 bg-[#dcdefe] rounded-lg border-[#BDBBFB] border"
+              className="px-14 py-4 bg-[#dcdefe] rounded-lg border-[#BDBBFB] border"
             />
             <button className="px-9 py-4 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-[#5A78FF] hover:to-[#A4B5FF]">
               Search Events

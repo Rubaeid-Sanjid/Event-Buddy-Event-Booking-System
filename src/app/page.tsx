@@ -11,7 +11,6 @@ export default function Home() {
         <Banner></Banner>
         <EventSection eventStatus={"Upcoming"}></EventSection>
         <EventSection eventStatus={"Previous"}></EventSection>
-        
       </main>
       <Footer></Footer>
     </div>
