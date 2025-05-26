@@ -80,20 +80,21 @@ const Banner = () => {
           </h3>
 
           <div className="flex lg:flex-row flex-col gap-4 justify-center relative">
-            <Image
+            <div className="absolute lg:left-[27%] left-8 top-4 pointer-events-none">
+              <Image
               src={"/search-normal.svg"}
               alt="search icon"
               width={24}
               height={24}
-              className="absolute lg:left-[27%] left-8 top-4 pointer-events-none"
             ></Image>
+            </div>
             
             <input
               type="text"
               placeholder="Search events"
-              className="lg:px-14 lg:m-0 mx-3 pl-14 py-4 bg-[#dcdefe] rounded-lg border-[#BDBBFB] border"
+              className="lg:px-14 lg:mx-0 mx-3 pl-14 lg:py-4 bg-[#dcdefe] rounded-lg border-[#BDBBFB] border"
             />
-            <button className="lg:m-0 mx-3 px-3 lg:px-9 py-4 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-[#5A78FF] hover:to-[#A4B5FF]">
+            <button className="lg:mx-0 mx-3 px-3 lg:px-9 py-4 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-[#5A78FF] hover:to-[#A4B5FF]">
               Search Events
             </button>
           </div>

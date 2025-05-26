@@ -51,22 +51,22 @@ export default function SignUp() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ECEEFF]">
-      <div className="flex items-center gap-2 my-4 ml-20">
+      <div className="flex items-center gap-2 my-4 lg:ml-20 ml-3">
         <Image src={"/ticket-2.png"} alt="logo" width={30} height={30}></Image>
-        <h2 className="text-2xl font-bold text-[#260b64]">Event buddy</h2>
+        <h2 className="lg:text-2xl text-lg font-bold text-[#260b64]">Event buddy</h2>
       </div>
 
       <div className="flex-grow flex justify-center items-center">
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-8 shadow-lg w-full max-w-md relative text-[#242565]"
+          className="bg-white lg:p-8 p-4 mx-4 lg:mx-0 lg:my-0 my-8 shadow-lg w-full max-w-md relative text-[#242565]"
           style={{
             clipPath:
               "polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px)",
           }}
         >
-          <h1 className="text-3xl font-semibold mb-2">Sign Up</h1>
-          <p className="text-lg mb-6 text-[#8570AD]">
+          <h1 className="lg:text-3xl text-xl font-semibold mb-2">Sign Up</h1>
+          <p className="lg:text-lg text-[16px] mb-6 text-[#8570AD]">
             Already have an account?{" "}
             <Link href="/SignIn" className="underline">
               Sign in
@@ -111,7 +111,15 @@ export default function SignUp() {
 
           <button
             type="submit"
-            className="cursor-pointer w-full text-white rounded-md bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] py-3 hover:from-indigo-600 hover:to-indigo-500 transition"
+           className="
+                    cursor-pointer
+                    w-full
+                    px-2 py-2
+                    text-white rounded-md 
+                    bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
+                    hover:from-indigo-600 hover:to-indigo-500 
+                    transition
+                  "
           >
             Sign up
           </button>
