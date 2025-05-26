@@ -38,7 +38,7 @@ const page = ({ params }: PageProps) => {
   return (
     <div className="text-[#242565]">
       <Navbar></Navbar>
-      <main className="px-16 my-10">
+      <main className="lg:px-16 px-3 my-10">
         <Link href={"/"} className="flex items-center gap-1 mb-5">
           <Image
             src={"/arrow-left.svg"}
@@ -56,7 +56,7 @@ const page = ({ params }: PageProps) => {
             alt="Event image"
             width={1232}
             height={585}
-            className="w-full h-[585px]"
+            className="w-full lg:h-[585px] h-[300px]"
             priority
           />
         </div>
@@ -72,12 +72,12 @@ const page = ({ params }: PageProps) => {
           ))}
         </div>
 
-        <h2 className="lg:text-4xl font-medium text-3xl my-8">
+        <h2 className="lg:text-4xl font-medium text-2xl my-8">
           Tech Conference 2025
         </h2>
 
         {/* Date, Time, Location info card */}
-        <div className="bg-[#FFFFFF] flex justify-between border border-[#BDBBFB59] rounded-xl p-6 mb-6 text-[16px] font-semibold">
+        <div className="bg-[#FFFFFF] flex lg:flex-row flex-col lg:gap-0 gap-4 justify-between border border-[#BDBBFB59] rounded-xl p-6 mb-6 text-[16px] font-semibold">
           <div className="flex items-center gap-2">
             <Image src="/calendar-2.svg" alt="Date" width={34} height={34} />
             <div>
@@ -112,7 +112,7 @@ const page = ({ params }: PageProps) => {
 
         {/* About event */}
         <div className="">
-          <h3 className="text-2xl font-medium mb-4">About this event</h3>
+          <h3 className="lg:text-2xl text-xl font-medium mb-4">About this event</h3>
           <h4 className="text-[#8570AD]">
             <p className="mb-4">
               Join us for Tech Future Expo 2025, an immersive one-day technology
@@ -120,13 +120,13 @@ const page = ({ params }: PageProps) => {
               to explore the future of software, AI, blockchain, and cloud
               computing.
             </p>
-            <ul className="mb-4">
+            <ul className="mb-4 list-disc">
               This event will feature:
-              <li>Keynote talks from industry pioneers </li>
-              <li>Live demos of upcoming tech products </li>
-              <li>Startup pitching sessions Hands-on coding workshops </li>
-              <li>Networking lounge for professionals and students </li>
-              <li>
+              <li className="ml-6">Keynote talks from industry pioneers </li>
+              <li className="ml-6">Live demos of upcoming tech products </li>
+              <li className="ml-6">Startup pitching sessions Hands-on coding workshops </li>
+              <li className="ml-6">Networking lounge for professionals and students </li>
+              <li className="ml-6">
                 Whether you're an aspiring developer, a seasoned engineer, or
                 just curious about what’s next in tech, this event offers
                 something for everyone.{" "}
@@ -140,7 +140,7 @@ const page = ({ params }: PageProps) => {
         </div>
 
         {/* Spot Left */}
-        <div className="flex justify-between text-[#8570AD] text-2xl font-medium border-t border-[#F1F0F9] pt-3 mt-24 mb-10">
+        <div className="flex justify-between text-[#8570AD] lg:text-2xl text-xl font-medium border-t border-[#F1F0F9] pt-3 mt-24 mb-10">
           <div className="flex items-center gap-1">
             <Image
               src={"/solar_chair-linear.svg"}
