@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const users : User[] = [
-  { name: "Asif", email: "user@gmail.com", password: "1234", role: "user" },
+  { name: "User", email: "user@gmail.com", password: "1234", role: "user" },
   {
     name: "Sanjid",
     email: "admin@gmail.com",

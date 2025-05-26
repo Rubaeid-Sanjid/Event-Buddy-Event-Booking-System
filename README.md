@@ -9,6 +9,8 @@ A responsive event booking platform frontend built with Next.js (App Router), Re
 - Browse upcoming and previous events
 - Event details with full description and booking options
 - Dummy authentication (signup/login) with role-based dashboards (user/admin)
+  User: user@gmail.com, password: "1234"
+  Admin: admin@gmail.com, password: "1234"
 - Responsive design optimized for desktop and mobile devices
 - Client-side state management via React Context API
 - Static JSON data used to simulate backend data
