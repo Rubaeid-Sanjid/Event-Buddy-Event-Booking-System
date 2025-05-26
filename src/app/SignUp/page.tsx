@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useAuth, User } from "../../context/AuthContext";
+import { useAuth, User } from "../../Context/AuthContext";
 import Image from "next/image";
 import Link from "next/link";
 
