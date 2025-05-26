@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Event {
@@ -40,7 +41,9 @@ const EventManagement= ({ events }: EventManagement) => {
                 {event.registrations.booked}/{event.registrations.total}
               </td>
               <td className="py-3 lg:px-4 flex gap-3">
+                <Link href={`/EventDetails/${event.id}`}>
                 <Image src={'/eye.svg'} alt={''} width={20} height={20}></Image>
+                </Link>
                 <Image src={'/edit.svg'} alt={''} width={20} height={20}></Image>
                 <Image src={'/trash.svg'} alt={''} width={20} height={20}></Image>
               </td>
