@@ -11,10 +11,10 @@ const page = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="text-[#242565] px-16 mb-24">
+      <div className="text-[#242565] lg:px-16 px-3 mb-24">
         <div className="my-8">
           <h2 className="md:text-4xl text-3xl font-medium mb-3">Dashboard</h2>
-          <p className="text-xl text-[#8570AD]">
+          <p className="lg:text-xl text-lg text-[#8570AD]">
             Welcome back,{user?.name}! Here you can manage your event registrations.
           </p>
         </div>
@@ -33,7 +33,7 @@ const page = () => {
               onCancel: () => alert("Cancelled!"),
             }}
           />
-          <button className="block mx-auto text-[15px] font-semibold cursor-pointer px-4 py-2 text-white rounded-md bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
+          <button className="my-8 block mx-auto text-[15px] font-semibold cursor-pointer px-4 py-2 text-white rounded-md bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
             Browse more events
           </button>
         </div>

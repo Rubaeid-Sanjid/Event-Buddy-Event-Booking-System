@@ -31,8 +31,8 @@ const Navbar = () => {
                     cursor-pointer 
                     w-16 sm:w-24           
                     text-xs sm:text-base     
-                    px-2 py-1 sm:px-4 sm:py-2 
-                    text-white rounded-lg 
+                    px-2 py-2 sm:px-4 sm:py-2 
+                    text-white rounded-md 
                     bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
                     hover:from-indigo-600 hover:to-indigo-500 
                     transition
@@ -48,8 +48,8 @@ const Navbar = () => {
                     cursor-pointer 
                     w-16 sm:w-24           
                     text-xs sm:text-base     
-                    px-2 py-1 sm:px-4 sm:py-2 
-                    text-white rounded-lg 
+                    px-2 py-2 sm:px-4 sm:py-2 
+                    text-white rounded-md 
                     bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
                     hover:from-indigo-600 hover:to-indigo-500 
                     transition
@@ -65,8 +65,8 @@ const Navbar = () => {
                     cursor-pointer 
                     w-16 sm:w-24 
                     text-xs sm:text-base 
-                    px-2 py-1 sm:px-4 sm:py-2 
-                    text-white rounded-lg 
+                    px-2 py-2 sm:px-4 sm:py-2 
+                    text-white rounded-md 
                     bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
                     hover:from-indigo-600 hover:to-indigo-500 
                     transition

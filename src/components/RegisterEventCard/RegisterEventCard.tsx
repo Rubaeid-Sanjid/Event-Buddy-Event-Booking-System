@@ -18,12 +18,12 @@ interface RegisteredEventProps {
 
 const RegisterEventCard = ({ event } : RegisteredEventProps) => {
   return (
-    <div className="flex items-center justify-between border border-[#BDBBFB59] rounded-md p-4">
+    <div className="flex lg:flex-row flex-col items-center justify-between border border-[#BDBBFB59] rounded-md p-4">
       <div className="flex items-center gap-6">
 
         <div className="text-center">
-          <span className="block text-2xl font-bold text-[#3D37F1]">{event.date.display.month}</span>
-          <span className="block text-5xl font-bold text-black">
+          <span className="block lg:text-2xl text-lg font-bold text-[#3D37F1]">{event.date.display.month}</span>
+          <span className="block lg:text-5xl text-3xl font-bold text-black">
             {event.date.display.day}
           </span>
         </div>
@@ -31,7 +31,7 @@ const RegisterEventCard = ({ event } : RegisteredEventProps) => {
         <div className="flex flex-col gap-1">
           <h3 className="text-xl font-medium">{event.title}</h3>
 
-          <div className="flex items-center gap-4 text-[#6A6A6A] text-[16px]">
+          <div className="flex lg:flex-row flex-col lg:items-center gap-4 lg:my-0 my-4 text-[#6A6A6A] text-[16px]">
             <div className="flex items-center gap-1">
               <Image src="/calendar-2.svg" alt="calendar" width={18} height={18} />
               <span>{event.date.dayOfWeek}</span>
