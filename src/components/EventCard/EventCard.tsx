@@ -59,13 +59,13 @@ const EventCard = ({event} : EventCardProps ) => {
           </span>
         </div>
 
-        <h2 className="text-2xl font-medium text-[#242565]">{event.title}</h2>
+        <h2 className="lg:text-2xl text-xl font-medium text-[#242565]">{event.title}</h2>
       </div>
 
       <div className="p-4 flex flex-col gap-4">
         <p className="text-[#6A6A6A] text-[16px]">{event.description}</p>
 
-        <div className="flex items-center gap-2 text-[#6A6A6A] text-[16px]">
+        <div className="flex lg:flex-row flex-col lg:items-center gap-2 text-[#6A6A6A] text-[16px]">
           <div className="flex items-center gap-1">
             <Image
               src={"/calendar-2.svg"}
@@ -98,7 +98,7 @@ const EventCard = ({event} : EventCardProps ) => {
         </div>
 
         {/* tags */}
-        <div className="flex gap-2">
+        <div className="flex lg:gap-2 gap-1">
           {event.tags.map((tag, idx) => (
             <li
               key={idx}

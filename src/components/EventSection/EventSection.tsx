@@ -32,11 +32,11 @@ const EventSection = ({ eventStatus }: StatusProp) => {
 
   return (
     <div className="bg-[#fafaff] lg:px-12 px-6 my-14">
-      <h2 className="text-4xl font-medium text-[#242565] mb-8">
+      <h2 className="lg:text-4xl text-2xl font-medium text-[#242565] mb-8">
         <span>{eventStatus}</span> Events
       </h2>
 
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {eventsToDisplay.map(({ event }, idx) => (
           <Link key={idx} href={`/EventDetails/${event.id}`}>
             <EventCard event={event}></EventCard>

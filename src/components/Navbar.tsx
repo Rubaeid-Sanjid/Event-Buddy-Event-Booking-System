@@ -9,7 +9,7 @@ const Navbar = () => {
   const { isAuthenticated, logout } = useAuth();
 
   return (
-    <nav className="w-full px-16 py-3">
+    <nav className="w-full lg:px-16 px-3 lg:py-3 py-4">
       <div className="flex justify-between">
         <div className="flex justify-center items-center gap-2">
           <Image
@@ -18,26 +18,60 @@ const Navbar = () => {
             width={30}
             height={30}
           ></Image>
-          <h2 className="text-2xl font-bold text-[#260b64]">Event buddy</h2>
+          <h2 className="lg:text-2xl text-lg font-bold text-[#260b64]">
+            Event buddy
+          </h2>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex lg:gap-4 gap-1">
           {isAuthenticated ? (
             <button
               onClick={logout}
-              className="cursor-pointer size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition"
+              className="
+                    cursor-pointer 
+                    w-16 sm:w-24           
+                    text-xs sm:text-base     
+                    px-2 py-1 sm:px-4 sm:py-2 
+                    text-white rounded-lg 
+                    bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
+                    hover:from-indigo-600 hover:to-indigo-500 
+                    transition
+                  "
             >
               Logout
             </button>
           ) : (
             <>
-              <Link href={"/SignIn"}>
-                <button className="cursor-pointer size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
+              <Link href="/SignIn">
+                <button
+                  className="
+                    cursor-pointer 
+                    w-16 sm:w-24           
+                    text-xs sm:text-base     
+                    px-2 py-1 sm:px-4 sm:py-2 
+                    text-white rounded-lg 
+                    bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
+                    hover:from-indigo-600 hover:to-indigo-500 
+                    transition
+                  "
+                >
                   Sign in
                 </button>
               </Link>
-              <Link href={"/SignUp"}>
-                <button className="cursor-pointer size-10 w-24 text-white rounded-lg bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] hover:from-indigo-600 hover:to-indigo-500 transition">
+
+              <Link href="/SignUp">
+                <button
+                  className="
+                    cursor-pointer 
+                    w-16 sm:w-24 
+                    text-xs sm:text-base 
+                    px-2 py-1 sm:px-4 sm:py-2 
+                    text-white rounded-lg 
+                    bg-gradient-to-t from-[#4157FE] to-[#7B8BFF] 
+                    hover:from-indigo-600 hover:to-indigo-500 
+                    transition
+                  "
+                >
                   Sign up
                 </button>
               </Link>
